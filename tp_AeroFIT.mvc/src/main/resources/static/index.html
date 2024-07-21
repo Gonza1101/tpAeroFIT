@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="es">
+   <head>
+    <meta charset="UTF-8">
+    <title>AeroFIT</title>
+    <script src="fileJS.js"></script>
+    
+   </head>
+   <body>
+      <div class="vuelo">
+         <h2 class="titulos">AeroFIT</h2>
+      </div>
+
+      <div class="vuelo">
+         <h3 class="titulos">Compra de Pasaje </h3>
+         <form id="pasajero">
+               <label id="vuelo">Vuelo</label><br>
+               <input type="text" id="idVuelo" name="idVuelo"><br><br>
+              
+               <label id="nombrePasajero">Nombre</label><br>
+               <input type="text" id="idNombre" name="idNombre"><br><br>
+
+               <label id="apellidoPasajero">Apellido</label><br>
+               <input type="text" id="idApellido" name="idApellido"><br><br>
+
+               <label id="dniPasajero">DNI</label><br>
+               <input type="text" id="dni" name="dni"><br><br>
+
+               <label id="cantidadPasaje">Cantidad</label><br>
+               <input type="text" id="cantPasaje" name="cantPasaje"><br><br>
+
+               <button type="button" id="comprarVuelo" onclick="comprarPasaje()"> Comprar </button>
+         </form>
+         
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+         
+   </body>
+</html>
