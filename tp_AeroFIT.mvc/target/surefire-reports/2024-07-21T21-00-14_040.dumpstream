@@ -1,0 +1,5 @@
+# Created at 2024-07-21T21:00:14.516
+Boot Manifest-JAR contains absolute paths in classpath 'D:\UsuaGNZ\Escritorio\tp\tpAeroFIT\tp_AeroFIT.mvc\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
