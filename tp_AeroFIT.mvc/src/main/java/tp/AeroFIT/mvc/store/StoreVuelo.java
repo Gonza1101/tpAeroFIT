@@ -16,12 +16,12 @@ public class StoreVuelo {
 	private MensajeDto mensajeDto;
 	
 	private Vuelo vuelo1 = new Vuelo(323,125, LocalDate.of(2024, 10, 7));
-	//private Vuelo vuelo2 = new Vuelo(420,50, LocalDate.of(2024, 9, 8));
-	//private Vuelo vuelo3 = new Vuelo(123,50, LocalDate.of(2024, 8, 9));
+	private Vuelo vuelo2 = new Vuelo(420,50, LocalDate.of(2024, 9, 8));
+	private Vuelo vuelo3 = new Vuelo(123,50, LocalDate.of(2024, 8, 9));
 	
 	public StoreVuelo() {
 		this.storeVuelo = new ArrayList<>();
-		this.mensajeDto = new MensajeDto();
+		this.setMensajeDto(new MensajeDto());
 		this.agregarVuelo();
 	}
 	
@@ -38,8 +38,8 @@ public class StoreVuelo {
 	
 	public void agregarVuelo() {
 		this.addVuelo(vuelo1);
-		//this.addVuelo(vuelo2);
-		//this.addVuelo(vuelo3);
+		this.addVuelo(vuelo2);
+		this.addVuelo(vuelo3);
 	}
 	//Buscar vuelo por vid
 	public synchronized Vuelo findById(Integer id) {
@@ -94,6 +94,14 @@ public class StoreVuelo {
 		
 		
 		
+	}
+
+	public MensajeDto getMensajeDto() {
+		return mensajeDto;
+	}
+
+	public void setMensajeDto(MensajeDto mensajeDto) {
+		this.mensajeDto = mensajeDto;
 	}
 		
 }
